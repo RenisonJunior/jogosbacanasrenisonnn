@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+}
+
+header p {
+    margin: 0;
+    color: #aaa;
+}
+
+nav {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+section {
+    width: 80%;
+    margin: 40px auto;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.game {
+    aspect-ratio: 3 / 4;
+    padding: 15px;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #333;
+    color: white;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.game:hover {
+    border-color: #aaa;
+    transform: translateY(-4px);
+}
+
+.game strong {
+    text-shadow: 0 2px 4px black;
+}
+
+.red-dead {
+    background-image:
+        linear-gradient(transparent, #000),
+        url("https://tse4.mm.bing.net/th/id/OIP.8G4yWLW5t0U6zp8sCUt15AHaJJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+
+.batman {
+    background-image:
+        linear-gradient(transparent, #000),
+        url("https://upload.wikimedia.org/wikipedia/pt/5/5d/Batman_Arkham_Knight_Capa.jpg");
+}
+
+.life-strange {
+    background-image:
+        linear-gradient(transparent, #000),
+        url("https://tse3.mm.bing.net/th/id/OIP.lD5veLpZCBXyYU22yfnIigHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+
+.ocarina {
+    background-image:
+        linear-gradient(transparent, #000),
+        url("https://howlongtobeat.com/games/10035_The_Legend_of_Zelda_Ocarina_of_Time.png");
+}
+
+.breath {
+    background-image:
+        linear-gradient(transparent, #000),
+        url("https://tse4.mm.bing.net/th/id/OIP.sxLXtcv87kOzxje722iLdgHaL_?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+
+.mario {
+    background-image:
+        linear-gradient(transparent, #000),
+        url("https://geekgamer-capas.nyc3.cdn.digitaloceanspaces.com/7jdh7co8.jpg");
+}
+
+/* Página de cada jogo */
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sobre .capa {
+    width: 280px;
+    max-width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border: 1px solid #333;
+}
+
+.sobre .texto {
+    flex: 1;
+    min-width: 260px;
+    line-height: 1.6;
+}
+
+.sobre .texto h2 {
+    margin-top: 0;
+}
+
+.sobre .texto p {
+    color: #ddd;
+}
+
+.ficha {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    color: #aaa;
+}
+
+.ficha li {
+    padding: 8px 0;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 700px) {
+    .games {
+        grid-template-columns: 1fr;
+    }
+}
